@@ -81,7 +81,20 @@
       <recent name="C:\Users\jarik\Desktop\software-design-itmo-master\refactoring\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.QueryServletTest">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.dorokhov.sd.refactoring.Main" />
+      <module name="refactoring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.dorokhov.sd.refactoring.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="QueryServletTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="refactoring" />
       <extension name="coverage">
@@ -108,22 +121,6 @@
       <option name="PACKAGE_NAME" value="ru.dorokhov.sd.refactoring.servlet" />
       <option name="MAIN_CLASS_NAME" value="ru.dorokhov.sd.refactoring.servlet.QueryServletTest" />
       <option name="METHOD_NAME" value="testGetCount" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="QueryServletTest.testGetMinWithNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="refactoring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.dorokhov.sd.refactoring.servlet.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.dorokhov.sd.refactoring.servlet" />
-      <option name="MAIN_CLASS_NAME" value="ru.dorokhov.sd.refactoring.servlet.QueryServletTest" />
-      <option name="METHOD_NAME" value="testGetMinWithNull" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -163,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.QueryServletTest" />
         <item itemvalue="JUnit.QueryServletTest.testGetUnknown" />
         <item itemvalue="JUnit.QueryServletTest.testGetCount" />
         <item itemvalue="JUnit.QueryServletTest.testGetSum" />
-        <item itemvalue="JUnit.QueryServletTest.testGetMinWithNull" />
       </list>
     </recent_temporary>
   </component>
@@ -278,30 +275,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602928284040" />
-    <state x="459" y="140" key="CommitChangelistDialog2" timestamp="1602955702075">
+    <state x="488" y="170" key="CommitChangelistDialog2" timestamp="1602965153755">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="459" y="140" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1602955702075" />
+    <state x="488" y="170" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1602965153755" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1602924131177">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602924131177" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1602964985452">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1602965057761">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602964985452" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1602964985451">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602965057761" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1602965057761">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602964985451" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1602964985451">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602965057761" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1602965057760">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602964985451" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1602964985452">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602965057760" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1602965057761">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602964985452" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602965057761" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1602950332048">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
