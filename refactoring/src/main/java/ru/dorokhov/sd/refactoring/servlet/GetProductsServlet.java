@@ -2,6 +2,7 @@ package ru.dorokhov.sd.refactoring.servlet;
 
 import ru.dorokhov.sd.refactoring.db.ProductDB;
 import ru.dorokhov.sd.refactoring.model.Product;
+import ru.dorokhov.sd.refactoring.response.ResponseBuilder;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -26,14 +27,14 @@ public class GetProductsServlet extends HttpServlet {
             throw new RuntimeException(e);
         }
 
-        response.getWriter().println("<html><body>");
-        response.getWriter().println("<h1>" + "All items that we have" + ": </h1>");
+        final ResponseBuilder responseBuilder = new ResponseBuilder();
+        responseBuilder.addH1Title("All items that we have: ");
 
         for (final Product product : products) {
-            response.getWriter().println(product.getName() + "\t" + product.getPrice() + "</br>");
+            responseBuilder.addElement(product.getName() + "\t" + product.getPrice());
         }
 
-        response.getWriter().println("</body></html>");
+        response.getWriter().println(responseBuilder.build());
         response.setContentType("text/html");
         response.setStatus(HttpServletResponse.SC_OK);
     }

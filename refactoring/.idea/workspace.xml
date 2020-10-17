@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85515b7c-2618-4a92-bf34-e0a2a42e5282" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/dorokhov/sd/refactoring/db/ProductDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/dorokhov/sd/refactoring/db/ProductDBImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/dorokhov/sd/refactoring/functional/FunctionalUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/dorokhov/sd/refactoring/functional/ThrowingFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/dorokhov/sd/refactoring/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/dorokhov/sd/refactoring/response/ResponseBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/dorokhov/sd/refactoring/servlet/ProductServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/dorokhov/sd/refactoring/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/dorokhov/sd/refactoring/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/dorokhov/sd/refactoring/servlet/AddProductServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/dorokhov/sd/refactoring/servlet/AddProductServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/dorokhov/sd/refactoring/servlet/DBHandler.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/dorokhov/sd/refactoring/servlet/GetProductsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/dorokhov/sd/refactoring/servlet/GetProductsServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/dorokhov/sd/refactoring/servlet/QueryServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/dorokhov/sd/refactoring/servlet/QueryServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/dorokhov/sd/refactoring/servlet/ServletCommon.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602870689750</updated>
       <workItem from="1602870692864" duration="1699000" />
-      <workItem from="1602920656276" duration="10274000" />
+      <workItem from="1602920656276" duration="15797000" />
     </task>
     <task id="LOCAL-00001" summary="renamed package and fixed formatting">
       <created>1602920935988</created>
@@ -111,13 +103,40 @@
       <option name="project" value="LOCAL" />
       <updated>1602923840017</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added database layer">
+      <created>1602933710777</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602933710777</updated>
+    </task>
+    <task id="LOCAL-00004" summary="integrated dedicated db into servlets">
+      <created>1602933795403</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602933795403</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="renamed package and fixed formatting" />
     <MESSAGE value="added config file" />
-    <option name="LAST_COMMIT_MESSAGE" value="added config file" />
+    <MESSAGE value="added database layer" />
+    <MESSAGE value="integrated dedicated db into servlets" />
+    <option name="LAST_COMMIT_MESSAGE" value="integrated dedicated db into servlets" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#SQL_Dialects" timestamp="1602928148717">
@@ -132,30 +151,34 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602928284040" />
-    <state x="520" y="114" key="CommitChangelistDialog2" timestamp="1602933710011">
+    <state x="520" y="114" key="CommitChangelistDialog2" timestamp="1602933794707">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="520" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1602933710011" />
+    <state x="520" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1602933794707" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1602924131177">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602924131177" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1602933631728">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1602946820662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602933631728" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1602933631727">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602946820662" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1602946820661">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602933631727" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1602933631727">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602946820661" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1602946820661">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602933631727" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1602933631727">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602946820661" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1602946820661">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602933631727" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602946820661" />
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1602935659482">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1602935659482" />
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1602920656095">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

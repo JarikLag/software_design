@@ -2,6 +2,7 @@ package ru.dorokhov.sd.refactoring.servlet;
 
 import ru.dorokhov.sd.refactoring.db.ProductDB;
 import ru.dorokhov.sd.refactoring.model.Product;
+import ru.dorokhov.sd.refactoring.response.ResponseBuilder;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -19,6 +20,7 @@ public class QueryServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         final String command = request.getParameter("command");
+        final ResponseBuilder responseBuilder = new ResponseBuilder();
 
         if ("max".equals(command)) {
             final Product product;
@@ -27,10 +29,9 @@ public class QueryServlet extends HttpServlet {
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
-            response.getWriter().println("<html><body>");
-            response.getWriter().println("<h1>" + "Item with max price" + ": </h1>");
-            response.getWriter().println(product.getName() + "\t" + product.getPrice() + "</br>");
-            response.getWriter().println("</body></html>");
+            responseBuilder.addH1Title("Item with max price: ");
+            responseBuilder.addElement(product.getName() + "\t" + product.getPrice());
+            response.getWriter().println(responseBuilder.build());
         } else if ("min".equals(command)) {
             final Product product;
             try {
@@ -38,10 +39,9 @@ public class QueryServlet extends HttpServlet {
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
-            response.getWriter().println("<html><body>");
-            response.getWriter().println("<h1>" + "Item with min price" + ": </h1>");
-            response.getWriter().println(product.getName() + "\t" + product.getPrice() + "</br>");
-            response.getWriter().println("</body></html>");
+            responseBuilder.addH1Title("Item with min price: ");
+            responseBuilder.addElement(product.getName() + "\t" + product.getPrice());
+            response.getWriter().println(responseBuilder.build());
         } else if ("sum".equals(command)) {
             final long sum;
             try {
@@ -49,10 +49,9 @@ public class QueryServlet extends HttpServlet {
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
-            response.getWriter().println("<html><body>");
-            response.getWriter().println("Summary price: ");
-            response.getWriter().println(sum);
-            response.getWriter().println("</body></html>");
+            responseBuilder.addTitle("Summary price: ");
+            responseBuilder.addElement(Long.toString(sum));
+            response.getWriter().println(responseBuilder.build());
         } else if ("count".equals(command)) {
             final int count;
             try {
@@ -60,10 +59,9 @@ public class QueryServlet extends HttpServlet {
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
-            response.getWriter().println("<html><body>");
-            response.getWriter().println("Number of products: ");
-            response.getWriter().println(count);
-            response.getWriter().println("</body></html>");
+            responseBuilder.addTitle("Number of products: ");
+            responseBuilder.addElement(Integer.toString(count));
+            response.getWriter().println(responseBuilder.build());
         } else {
             response.getWriter().println("Unknown command: " + command);
         }
