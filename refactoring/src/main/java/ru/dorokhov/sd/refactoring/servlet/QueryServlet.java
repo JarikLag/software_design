@@ -17,7 +17,7 @@ public class QueryServlet extends ProductServlet {
     @Override
     protected String processRequest(final HttpServletRequest request) {
         final String command = request.getParameter("command");
-        final SelectQuery query;
+        SelectQuery query = null;
         final ResponseBuilder responseBuilder = new ResponseBuilder();
 
         switch (command) {
@@ -34,13 +34,16 @@ public class QueryServlet extends ProductServlet {
                 query = new SelectCountQuery();
                 break;
             default:
-                return "Unknown command: " + command;
+                responseBuilder.addTitle("Unknown command: " + command);
+                break;
         }
 
-        try {
-            query.executeQuery(productDB, responseBuilder);
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
+        if (query != null) {
+            try {
+                query.executeQuery(productDB, responseBuilder);
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
         }
 
         return responseBuilder.build();

@@ -2,16 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85515b7c-2618-4a92-bf34-e0a2a42e5282" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/dorokhov/sd/refactoring/query/SelectCountQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/dorokhov/sd/refactoring/query/SelectMaxQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/dorokhov/sd/refactoring/query/SelectMinQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/dorokhov/sd/refactoring/query/SelectPrimitiveQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/dorokhov/sd/refactoring/query/SelectProductQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/dorokhov/sd/refactoring/query/SelectQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/dorokhov/sd/refactoring/query/SelectSumQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_3_5_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/dorokhov/sd/refactoring/db/ProductDBImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/dorokhov/sd/refactoring/servlet/AddProductServletTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/dorokhov/sd/refactoring/servlet/GetProductsServletTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/dorokhov/sd/refactoring/servlet/QueryServletTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/application-test.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/dorokhov/sd/refactoring/servlet/ProductServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/dorokhov/sd/refactoring/servlet/ProductServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/refactoring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/refactoring.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/dorokhov/sd/refactoring/query/SelectProductQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/dorokhov/sd/refactoring/query/SelectProductQuery.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/dorokhov/sd/refactoring/servlet/QueryServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/dorokhov/sd/refactoring/servlet/QueryServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,24 +72,102 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/HashtagSearcher" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.dorokhov.sd.refactoring.Main" />
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jarik\Desktop\software-design-itmo-master\refactoring\src\test\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.QueryServletTest">
+    <configuration name="QueryServletTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="refactoring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.dorokhov.sd.refactoring.*" />
+          <option name="PATTERN" value="ru.dorokhov.sd.refactoring.servlet.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="ru.dorokhov.sd.refactoring.servlet" />
+      <option name="MAIN_CLASS_NAME" value="ru.dorokhov.sd.refactoring.servlet.QueryServletTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QueryServletTest.testGetCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="refactoring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.dorokhov.sd.refactoring.servlet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.dorokhov.sd.refactoring.servlet" />
+      <option name="MAIN_CLASS_NAME" value="ru.dorokhov.sd.refactoring.servlet.QueryServletTest" />
+      <option name="METHOD_NAME" value="testGetCount" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QueryServletTest.testGetMinWithNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="refactoring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.dorokhov.sd.refactoring.servlet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.dorokhov.sd.refactoring.servlet" />
+      <option name="MAIN_CLASS_NAME" value="ru.dorokhov.sd.refactoring.servlet.QueryServletTest" />
+      <option name="METHOD_NAME" value="testGetMinWithNull" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QueryServletTest.testGetSum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="refactoring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.dorokhov.sd.refactoring.servlet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.dorokhov.sd.refactoring.servlet" />
+      <option name="MAIN_CLASS_NAME" value="ru.dorokhov.sd.refactoring.servlet.QueryServletTest" />
+      <option name="METHOD_NAME" value="testGetSum" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QueryServletTest.testGetUnknown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="refactoring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.dorokhov.sd.refactoring.servlet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.dorokhov.sd.refactoring.servlet" />
+      <option name="MAIN_CLASS_NAME" value="ru.dorokhov.sd.refactoring.servlet.QueryServletTest" />
+      <option name="METHOD_NAME" value="testGetUnknown" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.QueryServletTest" />
+        <item itemvalue="JUnit.QueryServletTest.testGetUnknown" />
+        <item itemvalue="JUnit.QueryServletTest.testGetCount" />
+        <item itemvalue="JUnit.QueryServletTest.testGetSum" />
+        <item itemvalue="JUnit.QueryServletTest.testGetMinWithNull" />
       </list>
     </recent_temporary>
   </component>
@@ -97,7 +182,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602870689750</updated>
       <workItem from="1602870692864" duration="1699000" />
-      <workItem from="1602920656276" duration="22178000" />
+      <workItem from="1602920656276" duration="29890000" />
     </task>
     <task id="LOCAL-00001" summary="renamed package and fixed formatting">
       <created>1602920935988</created>
@@ -141,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602950514305</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added queries and removed copy-paste from servlets">
+      <created>1602955702671</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1602955702671</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,13 +254,22 @@
     <MESSAGE value="integrated dedicated db into servlets" />
     <MESSAGE value="added html response builder" />
     <MESSAGE value="added inheritance to servlets" />
-    <option name="LAST_COMMIT_MESSAGE" value="added inheritance to servlets" />
+    <MESSAGE value="added queries and removed copy-paste from servlets" />
+    <option name="LAST_COMMIT_MESSAGE" value="added queries and removed copy-paste from servlets" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Project_Structure" timestamp="1602956156055">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1602956156055" />
     <state x="552" y="178" key="#SQL_Dialects" timestamp="1602928148717">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#SQL_Dialects/0.0.1920.1040@0.0.1920.1040" timestamp="1602928148717" />
+    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1602964773410">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602964773410" />
     <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1602955148684">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -177,37 +278,45 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602928284040" />
-    <state x="459" y="140" key="CommitChangelistDialog2" timestamp="1602955675936">
+    <state x="459" y="140" key="CommitChangelistDialog2" timestamp="1602955702075">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="459" y="140" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1602955675936" />
+    <state x="459" y="140" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1602955702075" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1602924131177">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602924131177" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1602955629351">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1602964985452">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602955629351" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1602955629351">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602964985452" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1602964985451">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602955629351" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1602955629350">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602964985451" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1602964985451">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602955629350" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1602955629351">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602964985451" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1602964985452">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602955629351" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602964985452" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1602950332048">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1602950332048" />
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1602961513661">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602961513661" />
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1602920656095">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602920656095" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1602963837062">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1602963837062" />
   </component>
 </project>

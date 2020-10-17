@@ -15,6 +15,8 @@ public abstract class SelectProductQuery implements SelectQuery {
 
     protected void process(final Product product, ResponseBuilder responseBuilder) {
         responseBuilder.addH1Title(getQueryTitle());
-        responseBuilder.addElement(product.getName() + "\t" + product.getPrice());
+        if (product != null) {
+            responseBuilder.addElement(product.getName() + "\t" + product.getPrice());
+        }
     }
 }
