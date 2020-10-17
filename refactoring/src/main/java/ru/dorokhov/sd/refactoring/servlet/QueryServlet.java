@@ -4,13 +4,10 @@ import ru.dorokhov.sd.refactoring.db.ProductDB;
 import ru.dorokhov.sd.refactoring.model.Product;
 import ru.dorokhov.sd.refactoring.response.ResponseBuilder;
 
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
 import java.sql.SQLException;
 
-public class QueryServlet extends HttpServlet {
+public class QueryServlet extends ProductServlet {
     private final ProductDB productDB;
 
     public QueryServlet(final ProductDB productDB) {
@@ -18,7 +15,7 @@ public class QueryServlet extends HttpServlet {
     }
 
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    protected String processRequest(final HttpServletRequest request) {
         final String command = request.getParameter("command");
         final ResponseBuilder responseBuilder = new ResponseBuilder();
 
@@ -31,7 +28,6 @@ public class QueryServlet extends HttpServlet {
             }
             responseBuilder.addH1Title("Item with max price: ");
             responseBuilder.addElement(product.getName() + "\t" + product.getPrice());
-            response.getWriter().println(responseBuilder.build());
         } else if ("min".equals(command)) {
             final Product product;
             try {
@@ -41,7 +37,6 @@ public class QueryServlet extends HttpServlet {
             }
             responseBuilder.addH1Title("Item with min price: ");
             responseBuilder.addElement(product.getName() + "\t" + product.getPrice());
-            response.getWriter().println(responseBuilder.build());
         } else if ("sum".equals(command)) {
             final long sum;
             try {
@@ -51,7 +46,6 @@ public class QueryServlet extends HttpServlet {
             }
             responseBuilder.addTitle("Summary price: ");
             responseBuilder.addElement(Long.toString(sum));
-            response.getWriter().println(responseBuilder.build());
         } else if ("count".equals(command)) {
             final int count;
             try {
@@ -61,13 +55,11 @@ public class QueryServlet extends HttpServlet {
             }
             responseBuilder.addTitle("Number of products: ");
             responseBuilder.addElement(Integer.toString(count));
-            response.getWriter().println(responseBuilder.build());
         } else {
-            response.getWriter().println("Unknown command: " + command);
+            return "Unknown command: " + command;
         }
 
-        response.setContentType("text/html");
-        response.setStatus(HttpServletResponse.SC_OK);
+        return responseBuilder.build();
     }
 
 }

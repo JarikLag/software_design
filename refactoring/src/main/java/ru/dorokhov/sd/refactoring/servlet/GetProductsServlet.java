@@ -4,14 +4,11 @@ import ru.dorokhov.sd.refactoring.db.ProductDB;
 import ru.dorokhov.sd.refactoring.model.Product;
 import ru.dorokhov.sd.refactoring.response.ResponseBuilder;
 
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 
-public class GetProductsServlet extends HttpServlet {
+public class GetProductsServlet extends ProductServlet {
     private final ProductDB productDB;
 
     public GetProductsServlet(final ProductDB productDB) {
@@ -19,7 +16,7 @@ public class GetProductsServlet extends HttpServlet {
     }
 
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    protected String processRequest(final HttpServletRequest request) {
         final List<Product> products;
         try {
             products = productDB.getAllProducts();
@@ -34,8 +31,6 @@ public class GetProductsServlet extends HttpServlet {
             responseBuilder.addElement(product.getName() + "\t" + product.getPrice());
         }
 
-        response.getWriter().println(responseBuilder.build());
-        response.setContentType("text/html");
-        response.setStatus(HttpServletResponse.SC_OK);
+        return responseBuilder.build();
     }
 }
