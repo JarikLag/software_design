@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="stats.RPMEventStatisticsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-12-18T14:18:00" hostname="DESKTOP-DSTT7UI" time="0.01">
+  <properties/>
+  <testcase name="printStatsTest" classname="stats.RPMEventStatisticsTest" time="0.01"/>
+  <system-out><![CDATA[event: s, count: 0,016667
+event: f, count: 0,033333
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
